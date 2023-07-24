@@ -23,13 +23,13 @@ let getWeather = () => {
 
             //  If city name is valid
             .then((data) => {
-                console.log(data);
-                console.log(data.weather[0].icon);
-                console.log(data.weather[0].main);
-                console.log(data.weather[0].description);
-                console.log(data.name);
-                console.log(data.main.temp_min);
-                console.log(data.main.temp_max);
+                // console.log(data);
+                // console.log(data.weather[0].icon);
+                // console.log(data.weather[0].main);
+                // console.log(data.weather[0].description);
+                // console.log(data.name);
+                // console.log(data.main.temp_min);
+                // console.log(data.main.temp_max);
                 result.innerHTML = `
                 
                 <h2>${data.name}</h2>
