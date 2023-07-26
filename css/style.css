@@ -95,6 +95,10 @@ body {
     font-weight: 200;
 }
 
+#city {
+    color: var(--white);
+}
+
 .search-container input::placeholder {
     color: var(--off-white);
 }
@@ -181,10 +185,15 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 450px) {
+@media(min-width: 320px) and (max-width: 768px) {
     .wrapper {
         font-size: 14px;
+        width: 90vw;
+        max-width: 22em;
+
     }
+
+
 
     body {
         display: flex;
