@@ -1,6 +1,7 @@
 let result = document.getElementById('result');
 let searchButton = document.getElementById('search-btn');
 let cityRef = document.getElementById('city');
+let searchCityInput = document.getElementById("city");
 
 
 // Function to fetch weather details from api
@@ -59,4 +60,10 @@ let getWeather = () => {
 };
 
 searchButton.addEventListener('click', getWeather);
+searchCityInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        searchButton.click();
+    }
+})
 window.addEventListener('load', getWeather);
